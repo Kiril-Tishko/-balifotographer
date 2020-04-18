@@ -60,7 +60,7 @@ li {
 
 .autor-name {
 	margin-left: -7px;
-	font-family: 'Annabelle';
+	font-family: Annabelle, Arial, 'sant-serif';
 }
 
 @media (max-width: 600px) {
@@ -196,11 +196,17 @@ li {
 
 
 /*	PHOTOSTORIES	*/
+.photostories {
+	padding-top: 74.2px;
+	margin-top: -74.2px;
+}
+
 .introduction {
 	height: 100vh;
 	position: relative;
-	background: url(../img/photostories-background.jpg) center center / cover no-repeat rgba(0,0,0,0);
+	background: url(../1.jpg) center center / cover no-repeat rgba(0,0,0,.4);
 	background-blend-mode: darken;
+	background-attachment: fixed;
 }
 
 .introduction__wrap {
@@ -307,7 +313,7 @@ li {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	max-height: 300px;
+	height: 300px;
 	border-radius: 1px;
 	overflow: hidden;
 }
@@ -352,17 +358,23 @@ li {
 
 
 /*	NUMBER	*/
-.number {
+.number  {
+	padding-top: 74.2px;
+	margin-top: -74.2px;
+}
+
+.number-wrap {
 	height: 70vh;
 	position: relative;
 	padding: 70px 0;
 	text-align: center;
-	background: url(../img/number-background.jpg) center center / cover no-repeat rgba(0,0,0,0.3);
+	background: url(../2.jpg) center center / cover no-repeat rgba(0,0,0,0.3);
 	background-blend-mode: darken;
+	background-attachment: fixed;
 	color: #fff;
 }
 
-.number__wraper {
+.number__container {
 	width: 100%;
 	position: absolute;
 	top: 50%;
@@ -381,13 +393,13 @@ li {
 }
 
 @media (max-width: 600px) {
-	.number {
+	.number-wrap {
 		height: auto;
 		padding-bottom: 50px;
 	}
 
-	.number,
-	.number__wraper {
+	.number-wrap,
+	.number__container {
 		position: static;
 		transform: none;
 	}
@@ -483,6 +495,7 @@ input {
 	color: #fff;
 	background: #000;
 	border: 0;
+	cursor: pointer;
 }
 
 
