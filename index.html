@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Фотограф на Бали</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Tab calor -->
+	<meta name="theme-color" content="#1a1a1a">
+	<meta name="msapplication-navbutton-color" content="#1a1a1a">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1a1a1a">
+	<!-- Favicon -->
+	<link rel="icon" href="img/faveicon16x16.png" type="image/x-icon" sizes="16x16">
+	<link rel="icon" href="img/faveicon32x32.png" type="image/x-icon" sizes="32x32">
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="main-menu" id="main-menu">
+			<h2 class="autor-name"><a href="#header">Алина Лебедева</a></h2>
+			<ul>
+				<li><a id="photostoriesMenuOption" href="#photostories">Фотоистории</a></li>
+				<li><a id="numberMenuOption" href="#number">Сколько</a></li>
+				<li><a id="orderMenuOption" href="#order">Заказать</a></li>
+			</ul>
+		</div>
+		<h1 class="main-title">Фотограф на Бали</h1>
+		<div class="header-gallery" id="header-gallery">
+			<div class="header-gallery__photo"><img src="img/1.png" alt=""></div>
+			<div class="header-gallery__photo"><img src="img/2.png" alt=""></div>
+			<div class="header-gallery__photo"><img src="img/3.png" alt=""></div>
+			<div class="header-gallery__photo"><img src="img/4.png" alt=""></div>
+			<div class="header-gallery__photo"><img src="img/5.png" alt=""></div>
+			<div class="header-gallery__photo"><img src="img/6.png" alt=""></div>
+			<div class="header-gallery__photo"><img src="img/7.png" alt=""></div>
+			<div class="header-gallery__photo"><img src="img/8.jpg" alt=""></div>
+		</div>
+	</header>
+
+	<section class="photostories" id="photostories">
+		<div class="introduction">
+			<div class="introduction__wrap">
+				<h3 class="photostories__title">Фотоистории</h3>
+				<h5 class="photostories__subtitle">Это моменты радости, любви, благодарности. Это про людей и их настоящие эмоции. Карточки, которые вне времени будут напоминать о моментах счастья!</h5>
+			</div>
+		</div>
+		<div class="photostories-set">
+			<a href="#" class="story">
+				<div class="photostories__img-wrap"><img src="img/photostories-1.jpg" alt=""></div>
+				<div class="story__text-wrap">
+					<h4 class="story__title">Сталкеры на Бали</h4>
+					<h5 class="story__sub-title">Поход на вулкан Иджен</h5>
+				</div>
+			</a>
+			<a href="#" class="story">
+				<div class="photostories__img-wrap"><img src="img/photostories-1.jpg" alt=""></div>
+				<div class="story__text-wrap">
+					<h4 class="story__title">Сталкеры на Бали</h4>
+					<h5 class="story__sub-title">Поход на вулкан Иджен</h5>
+				</div>
+			</a>
+		</div>
+	</section>
+
+	<section class="number" id="number">
+		<div class="number__wraper">
+			<h3 class="number__title">Все, что нужно знать</h3>
+			<ul class="number__list">
+				<li>
+					<div class="list__nmb">1</div>
+					<span class="list__line"></span>
+					<span class="list__description">Часа съёмки в любых локациях</span>
+				</li>
+				<li>
+					<div class="list__nmb">200</div>
+					<span class="list__line"></span>
+					<span class="list__description">Фотографий в обработке</span>
+				</li>
+				<li>
+					<div class="list__nmb">3</div>
+					<span class="list__line"></span>
+					<span class="list__description">Дня ожидания своих клёвых карточек</span>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="order" id="order">
+		<form class="order__contact-form ajax-contact-form" method="post">
+			<input type="text" name="name" placeholder="Имя">
+			<input type="email" name="email" placeholder="Email">
+			<button class="submit-button" type="submit" name="submit">
+				<span class="button-text">Оставить заявку</span>
+			</button>
+		</form>
+	</section>
+
+	<footer class="footer" id="footer">
+		<span>© 2017-2020 Алина Лебедева</span>
+	</footer>
+
+	<!-- MODAL -->
+	<div class="modal" id="modal">
+		<img class="modal__img" src="img/1.png" alt="lions">
+		<img class="modal__img" src="img/2.png" alt="lions">
+		<img class="modal__img" src="img/3.png" alt="lions">
+		<img class="modal__img" src="img/4.png" alt="lions">
+		<img class="modal__img" src="img/5.png" alt="lions">
+		<img class="modal__img" src="img/6.png" alt="lions">
+		<img class="modal__img" src="img/7.png" alt="lions">
+		<img class="modal__img" src="img/8.jpg" alt="lions">
+		<button class="modal-close-btn modal-btn" id="modal-close-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+				<g>
+					<g>
+						<path d="M505.943,6.058c-8.077-8.077-21.172-8.077-29.249,0L6.058,476.693c-8.077,8.077-8.077,21.172,0,29.249C10.096,509.982,15.39,512,20.683,512c5.293,0,10.586-2.019,14.625-6.059L505.943,35.306C514.019,27.23,514.019,14.135,505.943,6.058z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path d="M505.942,476.694L35.306,6.059c-8.076-8.077-21.172-8.077-29.248,0c-8.077,8.076-8.077,21.171,0,29.248l470.636,470.636c4.038,4.039,9.332,6.058,14.625,6.058c5.293,0,10.587-2.019,14.624-6.057C514.018,497.866,514.018,484.771,505.942,476.694z"/>
+					</g>
+				</g>
+			</svg>
+		</button>
+		<button class="modal-left-btn modal-btn" id="modal-left-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
+				<path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z" data-original="#000000" class="active-path" data-old_color="#000000"/>
+			</svg>
+		</button>
+		<button class="modal-right-btn modal-btn" id="modal-right-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129">
+				<g transform="matrix(-1 0 0 1 129 0)">
+					<path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z" data-original="#000000" class="active-path" data-old_color="#000000"/>
+				</g>
+			</svg>
+		</button>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
