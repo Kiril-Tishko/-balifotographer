@@ -50,7 +50,7 @@ li {
 /*	HEADER	*/
 .header {
 	/*min-height: 100vh;*/
-	max-height: 100vh;
+	/*max-height: 100vh;*/
 	background: url(imgPathHere) center center / cover no-repeat rgba(0,0,0,0.4);
 	background-blend-mode: darken;
 	background-attachment: fixed;
