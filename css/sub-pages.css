@@ -4,7 +4,6 @@ html, body {
 	font-family: 'OpinionPro', Arial, 'sans-serif';
 	overflow-x: hidden;
 	scroll-behavior: smooth;
-	zoom: 100%;
 }
 
 a {
@@ -50,7 +49,8 @@ li {
 
 /*	HEADER	*/
 .header {
-	height: 100vh !important;
+	/*min-height: 100vh;*/
+	max-height: 100vh;
 	background: url(imgPathHere) center center / cover no-repeat rgba(0,0,0,0.4);
 	background-blend-mode: darken;
 	background-attachment: fixed;
@@ -61,7 +61,7 @@ li {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	zoom: 83%;
+	zoom: 90%;
 	position: fixed;
 	top: 0;
 	padding: 0 2%;
