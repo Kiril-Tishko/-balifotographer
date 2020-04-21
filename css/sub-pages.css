@@ -1,0 +1,267 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'OpinionPro', Arial, 'sans-serif';
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	zoom: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+
+img {
+	user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none; 
+}
+
+* {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 5px;
+}
+
+::selection {
+	background: #D75F8D;
+	color: #fff;
+}
+
+/*	HEADER	*/
+.header {
+	height: 100vh !important;
+	background: url(imgPathHere) center center / cover no-repeat rgba(0,0,0,0.4);
+	background-blend-mode: darken;
+	background-attachment: fixed;
+	color: #fff;
+}
+
+.main-menu {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	zoom: 83%;
+	position: fixed;
+	top: 0;
+	padding: 0 2%;
+	background: #fff;
+	z-index: 100;
+}
+
+.shadow {
+	box-shadow: rgba(0,0,0,.13) 0 4px 16px;
+}
+
+.menu-autor {
+	display: flex;
+	align-items: center;
+}
+
+.autor-name {
+	margin-left: 15px;
+	font-family: Annabelle, Arial, 'sant-serif';
+}
+
+.autor-photo {
+	width: 47px;
+	height: 47px;
+	margin-left: 5px;
+	background: url(../img/autor-photo.jpg) center center / cover no-repeat rgba(0,0,0,.1);
+	background-blend-mode: darken;
+	border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+	.menu-autor {
+		width: 100%;
+		flex-direction: row-reverse;
+	}
+
+	.autor-name {
+		margin-right: auto;
+		margin-left: 0;
+	}
+
+	.autor-photo {
+		width: 40px;
+		height: 40px;
+		margin: 5px;
+	}
+}
+
+@media (max-width: 600px) {
+	.main-menu {
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+}
+
+.main-menu ul {
+	display: flex;
+	margin-left: auto;
+	font-size: 13px;
+	font-family: Arial, 'sans-serif';
+	text-transform: uppercase;
+	letter-spacing: .12em;
+}
+
+@media (max-width: 600px) {
+	.main-menu ul {
+		display: none;
+		border-bottom: 1px solid #000;
+	}
+}
+
+.main-menu ul li a {
+	display: block;
+	padding: 30px 12px;
+	transition: color 0.5s, background 0.5s;
+}
+
+.main-menu ul li a:hover {
+	transition: all 0.3s;
+	color: #fff;
+	background: #000;
+}
+
+.main-menuHover {
+	color: #fff;
+	background: #000;
+}
+
+@font-face {
+	font-family: 'Annabelle';
+	src: url('../fonts/Annabelle.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+.header__title {
+	width: 700px;
+	margin: 0 auto;
+	max-width: 90%;
+	padding-top: 100vh;
+	transform: translate(0, -50%);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+}
+
+.sub-title {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.main-title {
+	margin-left: 0;
+	padding-top: 30px;
+	font-size: 45px;
+}
+
+
+/*	DESCRIPTION	*/
+.description {
+	width: 900px;
+	max-width: 90%;
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 110px;
+}
+
+
+@media (max-width: 600px) {
+	.description {
+		margin-top: 50px;
+		margin-bottom: 70px;
+	}
+}
+
+.about__text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 905px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: rgba(0,0,0,.07);
+  font-size: 18px;
+  line-height: 25px;
+  font-style: italic;
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.25);
+  box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.25);
+}
+
+.about__text:before {
+  content: '';
+  width: 3px;
+  height: 90%;
+  position: absolute;
+  left: 23px;
+  background: #000;
+}
+
+.about__text p {
+  min-height: 30px;
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 28px;
+  padding-left: 46px;
+  padding-right: 25px;
+}
+
+
+
+/*	GALLERY	*/
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gellery__img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	min-height: calc(100vw/1.7);
+	max-height: 90vh;
+}
+
+@media (max-width: 700px) {
+	.gellery__img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.gellery__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
