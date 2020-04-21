@@ -49,8 +49,9 @@ li {
 
 /*	HEADER	*/
 .header {
-	/*min-height: 100vh;*/
-	/*max-height: 100vh;*/
+	display: flex;
+	align-items: center;
+	height: 100vh;
 	background: url(imgPathHere) center center / cover no-repeat rgba(0,0,0,0.4);
 	background-blend-mode: darken;
 	background-attachment: fixed;
@@ -100,7 +101,7 @@ li {
 
 	.autor-name {
 		margin-right: auto;
-		margin-left: 0;
+		margin-left: 3px;
 	}
 
 	.autor-photo {
@@ -160,8 +161,6 @@ li {
 	width: 700px;
 	margin: 0 auto;
 	max-width: 90%;
-	padding-top: 100vh;
-	transform: translate(0, -50%);
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
@@ -173,7 +172,6 @@ li {
 }
 
 .main-title {
-	margin-left: 0;
 	padding-top: 30px;
 	font-size: 45px;
 }
