@@ -1,3 +1,5 @@
+html,body{margin:0;padding:0;font-family:Arial,'sans-serif';overflow-x:hidden}body{zoom:90%}a{text-decoration:none;color:#000}h1,h2,h3,h4,h5,h6,ul,li{margin:0}ul{padding:0}li{list-style-type:none}.main-menu{display:flex;align-items:center;width:100%;position:fixed;top:0;padding:0 2%;background:#fff;z-index:100;box-sizing:border-box}.menu-autor{padding:5px;display:flex;align-items:center}.autor-name{margin-left:10px;font-family:Arial,'sant-serif'}.autor-photo{width:47px;height:47px;margin-left:5px;background:#333;border-radius:50%}@media(max-width:600px){.menu-autor{width:100%;flex-direction:row-reverse}.autor-name{margin-right:auto;margin-left:3px}.autor-photo{width:40px;height:40px;margin:5px}.main-menu ul{display:none !important}.main-title{padding-top:75px}}.main-menu ul{display:flex;margin-left:auto;font-size:13px;font-family:Arial,'sans-serif';text-transform:uppercase;letter-spacing:.12em}.main-menu ul li a{display:block;padding:30px 12px}.main-title{margin:0;margin-left:7%;padding-top:100px;margin-bottom:30px}.header-gallery{display:flex;justify-content:center;flex-wrap:wrap;min-height:70vh}.header-gallery__photo{display:flex;justify-content:center;align-items:center;width:calc(100%/4);height:auto;overflow:hidden;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent;background:#ddd !important}@media(max-width:900px){.header-gallery__photo{width:calc(100%/3);height:auto}.header-gallery__photo:nth-child(2),.header-gallery__photo:nth-child(7){display:none}}@media(max-width:650px){.header-gallery__photo{width:50%}}.header-gallery__photo img{width:100%;height:100%;object-fit:cover;transition:all .6s;overflow:hidden}html::-webkit-scrollbar{width: 7px;}
+
 html, body {
 	scroll-behavior: smooth;
 }
@@ -92,7 +94,7 @@ img {
 .introduction {
 	height: 100vh;
 	position: relative;
-	background: url(../img/photostories-background.jpg) center center / cover no-repeat rgba(0,0,0,.4);
+	background: url(../img/photostories-background.webp) center center / cover no-repeat rgba(0,0,0,.4);
 	background-blend-mode: darken;
 	background-attachment: fixed;
 }
@@ -262,7 +264,7 @@ img {
 	position: relative;
 	padding: 70px 0;
 	text-align: center;
-	background: url(../img/number-background.jpg) center center / cover no-repeat rgba(0,0,0,0.3);
+	background: url(../img/number-background.webp) center center / cover no-repeat rgba(0,0,0,0.3);
 	background-blend-mode: darken;
 	background-attachment: fixed;
 	color: #fff;
