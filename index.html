@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Фотограф на Бали</title>
 	<meta name="viewport" content="width=device-width">
-	<style>html,body{margin:0;padding:0;font-family:Arial,'sans-serif';overflow-x:hidden}body{zoom:90%}a{text-decoration:none;color:#000}h1,h2,h3,h4,h5,h6,ul,li{margin:0}ul{padding:0}li{list-style-type:none}.main-menu{display:flex;align-items:center;width:100%;position:fixed;top:0;padding:0 2%;background:#fff;z-index:100;box-sizing:border-box}.menu-autor{padding:5px;display:flex;align-items:center}.autor-name{margin-left:10px;font-family:Arial,'sant-serif'}.autor-photo{width:47px;height:47px;margin-left:5px;background:#333;border-radius:50%}@media(max-width:600px){.menu-autor{width:100%;flex-direction:row-reverse}.autor-name{margin-right:auto;margin-left:3px}.autor-photo{width:40px;height:40px;margin:5px}.main-menu ul{display:none !important}.main-title{padding-top:75px}}.main-menu ul{display:flex;margin-left:auto;font-size:13px;font-family:Arial,'sans-serif';text-transform:uppercase;letter-spacing:.12em}.main-menu ul li a{display:block;padding:30px 12px}.main-title{margin:0;margin-left:7%;padding-top:100px;margin-bottom:30px}.header-gallery{display:flex;justify-content:center;flex-wrap:wrap;min-height:90vh}.header-gallery__photo{display:flex;justify-content:center;align-items:center;width:calc(100%/4);height:auto;overflow:hidden;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent;background:#ddd !important}@media(max-width:900px){.header-gallery__photo{width:calc(100%/3);height:auto}.header-gallery__photo:nth-child(2),.header-gallery__photo:nth-child(7){display:none}}@media(max-width:650px){.header-gallery__photo{width:50%}}.header-gallery__photo img{width:100%;height:100%;object-fit:cover;transition:all .6s;overflow:hidden}html::-webkit-scrollbar{width: 7px;}</style>
+	<style>html,body{margin:0;padding:0;font-family:Arial,'sans-serif';overflow-x:hidden}body{zoom:90%}a{text-decoration:none;color:#000}h1,h2,h3,h4,h5,h6,ul,li{margin:0}ul{padding:0}li{list-style-type:none}.main-menu{display:flex;align-items:center;width:100%;position:fixed;top:0;padding:0 2%;background:#fff;z-index:100;box-sizing:border-box}.menu-autor{padding:5px;display:flex;align-items:center}.autor-name{margin-left:10px;font-family:Arial,'sant-serif'}.autor-photo{width:47px;height:47px;margin-left:5px;background:#333;border-radius:50%}@media(max-width:600px){.menu-autor{width:100%;flex-direction:row-reverse}.autor-name{margin-right:auto;margin-left:3px}.autor-photo{width:40px;height:40px;margin:5px}.main-menu ul{display:none !important}.main-title{padding-top:75px}}.main-menu ul{display:flex;margin-left:auto;font-size:13px;font-family:Arial,'sans-serif';text-transform:uppercase;letter-spacing:.12em}.main-menu ul li a{display:block;padding:30px 12px}.main-title{margin:0;margin-left:7%;padding-top:100px;margin-bottom:30px}.header-gallery{display:flex;justify-content:center;flex-wrap:wrap;min-height:70vh}.header-gallery__photo{display:flex;justify-content:center;align-items:center;width:calc(100%/4);height:auto;overflow:hidden;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent;background:#ddd !important}@media(max-width:900px){.header-gallery__photo{width:calc(100%/3);height:auto}.header-gallery__photo:nth-child(2),.header-gallery__photo:nth-child(7){display:none}}@media(max-width:650px){.header-gallery__photo{width:50%}}.header-gallery__photo img{width:100%;height:100%;object-fit:cover;transition:all .6s;overflow:hidden}html::-webkit-scrollbar{width: 7px;}</style>
 	<noscript><link rel="stylesheet" href="css/main.css"></noscript>
 	<!-- SEO -->
 	<meta name="keywords" content="фотограф на Бали, Алина Лебедева, фотограф, фотограф на море, фотоистории">
@@ -33,14 +33,14 @@
 		</div>
 		<h1 class="main-title">Фотограф на Бали</h1>
 		<div class="header-gallery" id="header-gallery">
-			<div class="header-gallery__photo"><img src="img/1.jpg" alt="Фото брюнетки в басейне"></div>
-			<div class="header-gallery__photo"><img src="img/2.jpg" alt="Фото смеющейся девушки"></div>
-			<div class="header-gallery__photo"><img src="img/3.jpg" alt="Фото молодой пары на пляже с собакой"></div>
-			<div class="header-gallery__photo"><img src="img/4.webp" alt="Фото мужчины с голым торсом завтракющем в позе по-турецки у себя дома"></div>
-			<div class="header-gallery__photo"><img src="img/5.webp" alt="Фото девушка в порыве эйфории"></div>
-			<div class="header-gallery__photo"><img src="img/6.webp" alt="Фото борода длинноволосого мужчины, лежащего на спине с сигаретой в зубах"></div>
-			<div class="header-gallery__photo"><img src="img/7.webp" alt="Фото коротковолосой девушки в оранжевом купальнике при закате сонца на пляже"></div>
-			<div class="header-gallery__photo"><img src="img/8.jpg" alt="Фото страсной блондинки в черном купальнике"></div>
+			<div class="header-gallery__photo"><img class="photo__img lazyLoadImg" src="img/thumbnails/1.jpg" alt="Фото брюнетки в басейне"></div>
+			<div class="header-gallery__photo"><img class="photo__img lazyLoadImg" src="img/thumbnails/2.jpg" alt="Фото смеющейся девушки"></div>
+			<div class="header-gallery__photo"><img class="photo__img lazyLoadImg" src="img/thumbnails/3.jpg" alt="Фото молодой пары на пляже с собакой"></div>
+			<div class="header-gallery__photo"><img class="photo__img lazyLoadImg" src="img/thumbnails/4.webp" alt="Фото мужчины с голым торсом завтракющем в позе по-турецки у себя дома"></div>
+			<div class="header-gallery__photo"><img class="photo__img lazyLoadImg" src="img/thumbnails/5.webp" alt="Фото девушка в порыве эйфории"></div>
+			<div class="header-gallery__photo"><img class="photo__img lazyLoadImg" src="img/thumbnails/6.webp" alt="Фото борода длинноволосого мужчины, лежащего на спине с сигаретой в зубах"></div>
+			<div class="header-gallery__photo"><img class="photo__img lazyLoadImg" src="img/thumbnails/7.webp" alt="Фото коротковолосой девушки в оранжевом купальнике при закате сонца на пляже"></div>
+			<div class="header-gallery__photo"><img class="photo__img lazyLoadImg" src="img/thumbnails/8.jpg" alt="Фото страсной блондинки в черном купальнике"></div>
 		</div>
 	</header>
 
@@ -53,70 +53,70 @@
 		</div>
 		<div class="photostories-set">
 			<a href="sub-pages/ali.html" class="story">
-				<div class="photostories__img-wrap"><img src="img/photostories-7.webp" alt=""></div>
+				<div class="photostories__img-wrap"><img class="lazyLoadImg" src="img/photostories-7.webp" alt=""></div>
 				<div class="story__text-wrap">
 					<h4 class="story__title">Али</h4>
 					<h5 class="story__sub-title">Про хрупкую силу...</h5>
 				</div>
 			</a>
 			<a href="sub-pages/frank.html" class="story">
-				<div class="photostories__img-wrap"><img src="img/photostories-9.webp" alt=""></div>
+				<div class="photostories__img-wrap"><img class="lazyLoadImg" src="img/photostories-9.webp" alt=""></div>
 				<div class="story__text-wrap">
 					<h4 class="story__title">Фрэнк</h4>
 					<h5 class="story__sub-title">Дружба начинается с кофе</h5>
 				</div>
 			</a>
 			<a href="sub-pages/kate-and-illia.html" class="story">
-				<div class="photostories__img-wrap"><img src="img/photostories-2.webp" alt=""></div>
+				<div class="photostories__img-wrap"><img class="lazyLoadImg" src="img/photostories-2.webp" alt=""></div>
 				<div class="story__text-wrap">
 					<h4 class="story__title">Кати & Илай</h4>
 					<h5 class="story__sub-title">Мы в любви, мы на Бали</h5>
 				</div>
 			</a>
 			<a href="sub-pages/katarina.html" class="story">
-				<div class="photostories__img-wrap"><img src="img/photostories-5.webp" alt=""></div>
+				<div class="photostories__img-wrap"><img class="lazyLoadImg" src="img/photostories-5.webp" alt=""></div>
 				<div class="story__text-wrap">
 					<h4 class="story__title">Катарина</h4>
 					<h5 class="story__sub-title">Счастье в простых вещах...</h5>
 				</div>
 			</a>
 			<a href="sub-pages/dar.html" class="story">
-				<div class="photostories__img-wrap"><img src="img/photostories-3.webp" alt=""></div>
+				<div class="photostories__img-wrap"><img class="lazyLoadImg" src="img/photostories-3.webp" alt=""></div>
 				<div class="story__text-wrap">
 					<h4 class="story__title">Дар</h4>
 					<h5 class="story__sub-title">Утро каждого дня</h5>
 				</div>
 			</a>
 			<a href="sub-pages/stalkers-in-bali.html" class="story">
-				<div class="photostories__img-wrap"><img src="img/photostories-1.webp" alt=""></div>
+				<div class="photostories__img-wrap"><img class="lazyLoadImg" src="img/photostories-1.webp" alt=""></div>
 				<div class="story__text-wrap">
 					<h4 class="story__title">Сталкеры на Бали</h4>
 					<h5 class="story__sub-title">Поход на вулкан Иджен</h5>
 				</div>
 			</a>
 			<a href="sub-pages/ksenia.html" class="story">
-				<div class="photostories__img-wrap"><img src="img/photostories-6.webp" alt=""></div>
+				<div class="photostories__img-wrap"><img class="lazyLoadImg" src="img/photostories-6.webp" alt=""></div>
 				<div class="story__text-wrap">
 					<h4 class="story__title">Ксюша</h4>
 					<h5 class="story__sub-title">Сладкая вата и солёная карамель...</h5>
 				</div>
 			</a>
 			<a href="sub-pages/alina.html" class="story">
-				<div class="photostories__img-wrap"><img src="img/photostories-10.webp" alt=""></div>
+				<div class="photostories__img-wrap"><img class="lazyLoadImg" src="img/photostories-10.webp" alt=""></div>
 				<div class="story__text-wrap">
 					<h4 class="story__title">Алина</h4>
 					<h5 class="story__sub-title">Дождь — не повод прекращать снимать</h5>
 				</div>
 			</a>
 			<a href="sub-pages/elena.html" class="story">
-				<div class="photostories__img-wrap"><img src="img/photostories-8.webp" alt=""></div>
+				<div class="photostories__img-wrap"><img class="lazyLoadImg" src="img/photostories-8.webp" alt=""></div>
 				<div class="story__text-wrap">
 					<h4 class="story__title">Елена</h4>
 					<h5 class="story__sub-title">Неужели я улечу без фотографий?</h5>
 				</div>
 			</a>
 			<a href="sub-pages/loving-family.html" class="story">
-				<div class="photostories__img-wrap"><img src="img/photostories-4.webp" alt=""></div>
+				<div class="photostories__img-wrap"><img class="lazyLoadImg" src="img/photostories-4.webp" alt=""></div>
 				<div class="story__text-wrap">
 					<h4 class="story__title">Настя, Кирилл и малыш Артур</h4>
 					<h5 class="story__sub-title">Любить...</h5>
@@ -169,14 +169,14 @@
 
 	<!-- MODAL -->
 	<div class="modal" id="modal" style="display: none;">
-		<img class="modal__img" src="img/1.jpg" alt="Фото брюнетки в басейне">
-		<img class="modal__img" src="img/2.jpg" alt="Фото смеющейся девушки">
-		<img class="modal__img" src="img/3.jpg" alt="Фото молодой пары на пляже с собакой">
-		<img class="modal__img" src="img/4.webp" alt="Фото мужчины с голым торсом завтракющем в позе по-турецки у себя дома">
-		<img class="modal__img" src="img/5.webp" alt="Фото девушка в порыве эйфории">
-		<img class="modal__img" src="img/6.webp" alt="Фото борода длинноволосого мужчины, лежащего на спине с сигаретой в зубах">
-		<img class="modal__img" src="img/7.webp" alt="Фото коротковолосой девушки в оранжевом купальнике при закате сонца на пляже">
-		<img class="modal__img" src="img/8.jpg" alt="Фото страсной блондинки в черном купальнике">
+		<img class="modal__img" data-lazy="img/1.jpg" alt="Фото брюнетки в басейне">
+		<img class="modal__img" data-lazy="img/2.jpg" alt="Фото смеющейся девушки">
+		<img class="modal__img" data-lazy="img/3.jpg" alt="Фото молодой пары на пляже с собакой">
+		<img class="modal__img" data-lazy="img/4.webp" alt="Фото мужчины с голым торсом завтракющем в позе по-турецки у себя дома">
+		<img class="modal__img" data-lazy="img/5.webp" alt="Фото девушка в порыве эйфории">
+		<img class="modal__img" data-lazy="img/6.webp" alt="Фото борода длинноволосого мужчины, лежащего на спине с сигаретой в зубах">
+		<img class="modal__img" data-lazy="img/7.webp" alt="Фото коротковолосой девушки в оранжевом купальнике при закате сонца на пляже">
+		<img class="modal__img" data-lazy="img/8.jpg" alt="Фото страсной блондинки в черном купальнике">
 		<button class="modal-close-btn modal-btn" id="modal-close-btn">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 				<g>
