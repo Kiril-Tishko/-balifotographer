@@ -48,7 +48,7 @@ ul {
 
 .autor-photo {
 	margin-left: 5px;
-	background: url(../img/autor-photo.webp) center center / cover no-repeat rgba(0,0,0,.1);
+	background: url(../img/autor-photo.jpg) center center / cover no-repeat rgba(0,0,0,.1);
 	background-blend-mode: darken;
 }
 
