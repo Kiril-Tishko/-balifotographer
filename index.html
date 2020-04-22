@@ -117,7 +117,7 @@
 			<a href="sub-pages/loving-family.html" class="story">
 				<div class="photostories__img-wrap"><img src="img/photostories-4.jpg" alt=""></div>
 				<div class="story__text-wrap">
-					<h4 class="story__title">Саша, Илья и малыш Артур</h4>
+					<h4 class="story__title">Настя, Кирилл и малыш Артур</h4>
 					<h5 class="story__sub-title">Любить...</h5>
 				</div>
 			</a>
@@ -150,9 +150,12 @@
 	</section>
 
 	<section class="order" id="order">
+		<h3 class="visually-hidden">Заказать</h3>
 		<form class="order__contact-form ajax-contact-form" method="post">
-			<input type="text" name="name" placeholder="Имя" required>
-			<input type="email" name="email" placeholder="Email" required>
+			<label class="visually-hidden" for="name">имя</label>
+			<input id="name" type="text" name="name" placeholder="Имя" required aria-required="true">
+			<label class="visually-hidden" for="email">Email</label>
+			<input id="email" type="email" name="email" placeholder="Email" required aria-required="true">
 			<button class="submit-button" type="submit" name="submit">
 				<span class="button-text">Оставить заявку</span>
 			</button>
