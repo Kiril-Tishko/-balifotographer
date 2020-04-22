@@ -92,7 +92,7 @@ img {
 .introduction {
 	height: 100vh;
 	position: relative;
-	background: url(../img/photostories-background.webp) center center / cover no-repeat rgba(0,0,0,.4);
+	background: url(../img/photostories-background.jpg) center center / cover no-repeat rgba(0,0,0,.4);
 	background-blend-mode: darken;
 	background-attachment: fixed;
 }
@@ -262,7 +262,7 @@ img {
 	position: relative;
 	padding: 70px 0;
 	text-align: center;
-	background: url(../img/number-background.webp) center center / cover no-repeat rgba(0,0,0,0.3);
+	background: url(../img/number-background.jpg) center center / cover no-repeat rgba(0,0,0,0.3);
 	background-blend-mode: darken;
 	background-attachment: fixed;
 	color: #fff;
