@@ -212,7 +212,7 @@
 
 
 
-<!-- lazy load -->
+<!-- lazy load-->
 <script>const lazyLoadImg=document.getElementsByClassName("lazyLoadImg");let modalImgElem=document.getElementsByClassName("modal__img");function justLoadAllGalleryImg(){for(var t=lazyLoadImg.length;t--;){let e=lazyLoadImg[t].getAttribute("src");e=e.replace("thumbnails/",""),lazyLoadImg[t].setAttribute("src",e)}}function justLoadAllModalImg(){for(var t=modalImgElem.length;t--;){let e=modalImgElem[t].getAttribute("data-lazy");modalImgElem[t].setAttribute("src",e)}}if(window.matchMedia("(min-width: 525px)").matches&&(justLoadAllGalleryImg(),justLoadAllModalImg()),window.matchMedia("(max-width: 525px)").matches){const t=t=>{new IntersectionObserver(function(t,e){t.forEach(t=>{if(t.isIntersecting){const l=t.target;let a=l.getAttribute("src");a=a.replace("thumbnails/",""),l.setAttribute("src",a),e.disconnect()}})},{root:null,rootMargin:"250px 0px 250px 0px",threshold:0}).observe(t)};document.querySelectorAll(".lazyLoadImg").forEach(t)}</script>
 
 	<!-- <script src="js/jquery.js"></script> -->
