@@ -19,8 +19,8 @@ const section = document.getElementsByTagName('section')
 const header = document.getElementsByTagName('header')[0]
 const footer = document.getElementsByTagName('footer')[0]
 const gelleryImgWrapElem = document.getElementsByClassName('header-gallery__photo')
-const lazyLoadImg = document.getElementsByClassName('lazyLoadImg')
-const modalImgElem = document.getElementsByClassName('modal__img')
+// let lazyLoadImg = document.getElementsByClassName('lazyLoadImg')
+// let modalImgElem = document.getElementsByClassName('modal__img')
 const modalCloseBtnElem = document.getElementById('modal-close-btn')
 const modalLeftBtnElem = document.getElementById('modal-left-btn')
 const modalRightBtnElem = document.getElementById('modal-right-btn')
@@ -160,63 +160,7 @@ for (var i = gelleryImgWrapElem.length; i--;) {
 
 
 
-//		delate (main part) action lazy load on PC
-function justLoadAllGalleryImg() {
-	for (var i = lazyLoadImg.length; i--;) {
-		let srcGellery = lazyLoadImg[i].getAttribute('src')
-		// delete '-thumbnail' from src
-		srcGellery = srcGellery.replace('thumbnails/', '')
-		// set atribute
-		lazyLoadImg[i].setAttribute('src', srcGellery)
-	}
-}
 
-function justLoadAllModalImg() {
-	for (var i = modalImgElem.length; i--;) {
-		let srcModal = modalImgElem[i].getAttribute('data-lazy')
-		// set atribute
-		modalImgElem[i].setAttribute('src', srcModal)
-	}
-}
-
-if (window.matchMedia("(min-width: 525px)").matches) {
-	justLoadAllGalleryImg()
-	justLoadAllModalImg()
-}
-
-
-//		lazy load on mobile
-if (window.matchMedia("(max-width: 525px)").matches) {
-	const targets = document.querySelectorAll('.lazyLoadImg');
-
-	const lazyLoad = target => {
-		var options = {
-			root: null,
-			rootMargin: '250px 0px 250px 0px',
-			threshold: 0
-		}
-
-		var callback = function(entries, observer) { 
-			entries.forEach(entry => {
-
-				if (entry.isIntersecting) {
-					const img = entry.target;
-					let src = img.getAttribute('src');
-
-					// delete '-thumbnail' from src
-					src = src.replace('thumbnails/', '')
-
-					img.setAttribute('src', src);
-					observer.disconnect();
-				}
-			});
-		};
-		var observer = new IntersectionObserver(callback, options);
-		observer.observe(target)
-	};
-
-	targets.forEach(lazyLoad);
-}
 
 
 
