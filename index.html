@@ -210,11 +210,9 @@
 		var ms=document.createElement("link");ms.rel="stylesheet";ms.href="css/main.css";document.getElementsByTagName("head")[0].appendChild(ms);
 	</script>
 
-
-<script>var lazyLoadImg=document.getElementsByClassName("lazyLoadImg"),modalImgElem=document.getElementsByClassName("modal__img");function justLoadAllGalleryImg(){for(var a=lazyLoadImg.length;a--;){var b=lazyLoadImg[a].getAttribute("src");b=b.replace("thumbnails/","");lazyLoadImg[a].setAttribute("src",b)}}function justLoadAllModalImg(){for(var a=modalImgElem.length;a--;){var b=modalImgElem[a].getAttribute("data-lazy");modalImgElem[a].setAttribute("src",b)}}window.matchMedia("(min-width: 525px)").matches&&(justLoadAllGalleryImg(),justLoadAllModalImg());if(window.matchMedia("(max-width: 525px)").matches){var targets=document.querySelectorAll(".lazyLoadImg"),lazyLoad=function(a){(new IntersectionObserver(function(a,c){a.forEach(function(a){if(a.isIntersecting){a=a.target;var b=a.getAttribute("src");b=b.replace("thumbnails/","");a.setAttribute("src",b);c.disconnect()}})},{root:null,rootMargin:"250px 0px 250px 0px",threshold:0})).observe(a)};targets.forEach(lazyLoad)};</script>
-
 	<!-- Load Scripts -->
 	<script>var scr = {"scripts":[
+	{"src" : "js/lazyLoadImg.js", "async" : false},
 	{"src" : "js/jquery.js", "async" : false},
 	{"src" : "js/main.js", "async" : false},
 	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
