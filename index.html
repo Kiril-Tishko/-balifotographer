@@ -213,67 +213,7 @@
 
 
 <!-- lazy load -->
-<script>
-const lazyLoadImg = document.getElementsByClassName('lazyLoadImg')
-let modalImgElem = document.getElementsByClassName('modal__img')
-
-//		delate (main part) action lazy load on PC
-function justLoadAllGalleryImg() {
-	for (var i = lazyLoadImg.length; i--;) {
-		let srcGellery = lazyLoadImg[i].getAttribute('src')
-		// delete '-thumbnail' from src
-		srcGellery = srcGellery.replace('thumbnails/', '')
-		// set atribute
-		lazyLoadImg[i].setAttribute('src', srcGellery)
-	}
-}
-
-function justLoadAllModalImg() {
-	for (var i = modalImgElem.length; i--;) {
-		let srcModal = modalImgElem[i].getAttribute('data-lazy')
-		// set atribute
-		modalImgElem[i].setAttribute('src', srcModal)
-	}
-}
-
-if (window.matchMedia("(min-width: 525px)").matches) {
-	justLoadAllGalleryImg()
-	justLoadAllModalImg()
-}
-
-//		lazy load on mobile
-if (window.matchMedia("(max-width: 525px)").matches) {
-	const targets = document.querySelectorAll('.lazyLoadImg');
-
-	const lazyLoad = target => {
-		var options = {
-			root: null,
-			rootMargin: '250px 0px 250px 0px',
-			threshold: 0
-		}
-
-		var callback = function(entries, observer) { 
-			entries.forEach(entry => {
-
-				if (entry.isIntersecting) {
-					const img = entry.target;
-					let src = img.getAttribute('src');
-
-					// delete '-thumbnail' from src
-					src = src.replace('thumbnails/', '')
-
-					img.setAttribute('src', src);
-					observer.disconnect();
-				}
-			});
-		};
-		var observer = new IntersectionObserver(callback, options);
-		observer.observe(target)
-	};
-
-	targets.forEach(lazyLoad);
-}
-</script>
+<script>const lazyLoadImg=document.getElementsByClassName("lazyLoadImg");let modalImgElem=document.getElementsByClassName("modal__img");function justLoadAllGalleryImg(){for(var t=lazyLoadImg.length;t--;){let e=lazyLoadImg[t].getAttribute("src");e=e.replace("thumbnails/",""),lazyLoadImg[t].setAttribute("src",e)}}function justLoadAllModalImg(){for(var t=modalImgElem.length;t--;){let e=modalImgElem[t].getAttribute("data-lazy");modalImgElem[t].setAttribute("src",e)}}if(window.matchMedia("(min-width: 525px)").matches&&(justLoadAllGalleryImg(),justLoadAllModalImg()),window.matchMedia("(max-width: 525px)").matches){const t=t=>{new IntersectionObserver(function(t,e){t.forEach(t=>{if(t.isIntersecting){const l=t.target;let a=l.getAttribute("src");a=a.replace("thumbnails/",""),l.setAttribute("src",a),e.disconnect()}})},{root:null,rootMargin:"250px 0px 250px 0px",threshold:0}).observe(t)};document.querySelectorAll(".lazyLoadImg").forEach(t)}</script>
 
 	<!-- <script src="js/jquery.js"></script> -->
 	<!-- <script src="js/main.js"></script> -->
