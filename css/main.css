@@ -213,6 +213,8 @@ h3, h4, h5, h6, li {
 	height: 300px;
 	border-radius: 1px;
 	overflow: hidden;
+	background: #eee;
+  min-height: 190px;
 }
 
 @media (max-width: 910px) {

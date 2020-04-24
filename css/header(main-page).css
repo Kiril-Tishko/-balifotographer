@@ -120,7 +120,7 @@ li {
 	height: auto;
 	overflow: hidden;
 
-	background: #ddd !important;
+	background: #eee !important;
 }
 
 @media (max-width: 900px) {
