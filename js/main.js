@@ -20,7 +20,7 @@ const header = document.getElementsByTagName('header')[0]
 const footer = document.getElementsByTagName('footer')[0]
 const gelleryImgWrapElem = document.getElementsByClassName('header-gallery__photo')
 // let lazyLoadImg = document.getElementsByClassName('lazyLoadImg')
-// let modalImgElem = document.getElementsByClassName('modal__img')
+let modalImgElem = document.getElementsByClassName('modal__img')
 const modalCloseBtnElem = document.getElementById('modal-close-btn')
 const modalLeftBtnElem = document.getElementById('modal-left-btn')
 const modalRightBtnElem = document.getElementById('modal-right-btn')
@@ -158,7 +158,6 @@ for (var i = gelleryImgWrapElem.length; i--;) {
 
 
 let lazyLoadImg = document.getElementsByClassName('lazyLoadImg')
-let modalImgElem = document.getElementsByClassName('modal__img')
 	//		delate (main part) action lazy load on PC
 function justLoadAllGalleryImg() {
 	for (var i = lazyLoadImg.length; i--;) {
@@ -216,3 +215,44 @@ if (window.matchMedia("(max-width: 525px)").matches) {
 
 	targets.forEach(lazyLoad);
 }
+
+
+// Notification of -/un successful message sending
+// jQuery(document).ready(function($) {
+
+// $(".contact-form").submit(function() {
+// var str = $(this).serialize();
+
+// let messageTextElem = document.getElementById('form-message-text')
+
+
+
+jQuery(document).ready(function($) {
+	$(".ajax-contact-form").submit(function() {
+		var str = $(this).serialize();
+
+		let messageTextElem = document.getElementById("messageText")
+		let inputNameElem = document.getElementById("name")
+		let inputEmailElem = document.getElementById("email")
+
+		messageTextElem.style.visibility = 'visible'
+
+		$.ajax({
+			type: "POST",
+			url: "../php/contact.php",
+			data: str,
+			success: function(msg) {
+				if(msg == "Ваше сообщение отправлено!") {
+					messageTextElem.style.color = "#008000d4"
+					messageTextElem.innerHTML = "Сообщение отправлено!"
+					inputNameElem.value = ""
+					inputEmailElem.value = ""
+				} else {
+					messageTextElem.innerHTML = "" + msg;
+				}
+				// $('.note2').html(result);
+			}
+		});
+		return false;
+	});
+});

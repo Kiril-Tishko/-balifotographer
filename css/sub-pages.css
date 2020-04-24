@@ -102,6 +102,7 @@ ul {
 	src: url('../fonts/Annabelle.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
+	font-display: swap;
 }
 
 
