@@ -177,14 +177,14 @@ const targets = document.querySelectorAll('.lazyLoadImg');
 const lazyLoad = target => {
 	var options = {
 		root: null,
-		rootMargin: '250px 0px 250px 0px',
+		rootMargin: '400px 0px 400px 0px',
 		threshold: 0
 	}
 
-	if (window.matchMedia("(min-width: 1000px)").matches) {
+	if (window.matchMedia("(min-width: 900px)").matches) {
 		var options = {
 			root: null,
-			rootMargin: '400px 0px 400px 0px',
+			rootMargin: '550px 0px 550px 0px',
 			threshold: 0
 		}
 	}
